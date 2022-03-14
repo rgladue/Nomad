@@ -1,22 +1,22 @@
 -- schema/01_create_users.sql
-DROP TABLE IF EXISTS user CASCADE;
-DROP TABLE IF EXISTS city CASCADE;
-DROP TABLE IF EXISTS comments CASCADE;
+DROP TABLE IF EXISTS users CASCADE;
+DROP TABLE IF EXISTS cities CASCADE;
+DROP TABLE IF EXISTS user_inputs CASCADE;
 -- CREATE USERS
-CREATE TABLE user (
+CREATE TABLE users (
   id SERIAL PRIMARY KEY,
   username VARCHAR(255) NOT NULL,
   email VARCHAR(255) NOT NULL,
   password VARCHAR(255)
 );
  
-CREATE TABLE city (
+CREATE TABLE cities (
 id SERIAL PRIMARY KEY,
 name VARCHAR(255) NOT NULL,
 img_link VARCHAR(255),
 country VARCHAR(255),
 language VARCHAR(255),
-population INT
+population INT,
 avg_temp INT,
 cost_of_living VARCHAR(255),
 internet_speed VARCHAR(255),

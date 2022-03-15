@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+
+.question {
+  font-family: 'Caveat', 'sans serif', serif;
+  font-size: 35px;
+  margin-bottom: 80px;
+}
+
+.city-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

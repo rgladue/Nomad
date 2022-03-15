@@ -1,8 +1,17 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './CityList.scss';
+import axios from 'axios';
 import CityListItem from '../components/CityListItem';
 
 function CityList(props) {
+  const [cities, setCities] = useState([]);
+
+  useEffect(() => {
+    axios.get('localhost:8080/cities')
+    .then((response) => {
+      console.log(response);
+    })
+  })
   return(
     <section className='city-list'>
     <h1 className="question">Where In The World Do You Want To Live Today?</h1> 

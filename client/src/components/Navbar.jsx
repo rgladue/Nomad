@@ -1,8 +1,18 @@
 import React from 'react';
 import './Navbar.scss';
-import Beach from '../img/beach.mp4';
+import Nomadic from '../img/nomadic.mp4';
+import Logo from '../img/earth.png';
+import { useState } from 'react';
 
 function Navbar(props) {
+  const [user, setUser] = useState('');
+  const userLogin = () => {
+    setUser('TugEye');
+  }
+
+  const userLogout = () => {
+    setUser('');
+  }
   return(
     <div className="navbar">
       <video
@@ -16,9 +26,13 @@ function Navbar(props) {
           zIndex: "-2",
           objectFit: 'cover'
         }}>
-        <source src={Beach} type='video/mp4'/>
+        <source src={Nomadic} type='video/mp4'/>
       </video>
+          <img className='earth' src={Logo}/>
           <h1 className='title'>Nomadic</h1>
+          {user && <p className='greeting'>Hello, {user}</p>}
+          {user ? <div className="user-btn" onClick={userLogout}>Logout</div> : <div className="user-btn" onClick={userLogin}>Login</div>}
+          
       
     </div>
   )

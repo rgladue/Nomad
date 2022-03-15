@@ -12,8 +12,40 @@
   z-index: 1000;
   top: 0;
   left: 0;
-  padding: 40px 100px;
+  margin: 60px 120px;
   color: white;
   font-size: 70px;
   font-family: 'Caveat', 'Helvetica Neue';
+  cursor: pointer;
+  text-shadow: 10px 5px 10px rgba(0, 0, 0, 0.8);
+}
+
+.earth {
+  position: absolute;
+  z-index:999;
+  top: 0;
+  left: 0;
+  height: 150px;
+  margin: 42px 154px;
+}
+
+.user-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  margin: 40px 100px;
+  padding: 5px 15px;
+  color: white;
+  border: 1px solid white;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.greeting {
+  position: absolute;
+  color: white;
+  top: 0;
+  left: 50%;
+  font-size: 25px;
 }

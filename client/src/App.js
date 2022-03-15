@@ -1,12 +1,27 @@
 import './App.scss';
+import React, { useEffect, useState } from 'react';
 import CityList from './components/CityList';
 import Navbar from './components/Navbar';
+import axios from 'axios';
 
 function App() {
+  const [cities, setCities] = useState([]);
+  
+  useEffect(() => {
+    axios.get('http://localhost:8080/cities')
+    .then((response) => {
+      console.log(response.data)
+      setCities(response.data);
+    })
+    .catch((error) => {
+      console.log('oh no!', error);
+    })
+  }, cities)
+
   return (
     <div className="App">
       <Navbar />
-      <CityList />
+      <CityList cities={cities} />
     </div>
   );
 }

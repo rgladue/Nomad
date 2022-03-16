@@ -1,12 +1,12 @@
 import React from 'react';
 import './CityListItem.scss';
 
+
 function CityListItem(props) {
-  console.log('sup', props);
+
   return (
-    
-    <div className="city-item" style={{backgroundImage: `url(${props.img})`, backgroundWidth: '100%', backgroundPosition: 'cover', cursor: 'pointer'}}>
-      
+    <div className="city-item" onClick={props.moreInfo}>
+      <img className="picz" src={props.img} alt=""/>
       <p className="city-name">{props.name}</p>
       <p className ='star-rating'>{props.safety_rating}/5</p>
     </div>

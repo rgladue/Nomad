@@ -10,13 +10,13 @@ function App() {
   useEffect(() => {
     axios.get('http://localhost:8080/cities')
     .then((response) => {
-      console.log(response.data)
+     
       setCities(response.data);
     })
     .catch((error) => {
       console.log('oh no!', error);
     })
-  }, cities)
+  }, [])
 
   return (
     <div className="App">

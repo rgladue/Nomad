@@ -1,9 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
 
+body {
+  background-color: rgb(255, 255, 255);
+}
+
 .question {
   font-family: 'Caveat', 'sans serif', serif;
   font-size: 35px;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
+  color: black;
 }
 
 .city-list {
@@ -21,6 +26,6 @@ ul {
 
 .load {
   font-weight: bold;
-  color: grey;
+  color: black;
   margin: 10px;
 }

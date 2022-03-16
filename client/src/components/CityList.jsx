@@ -10,6 +10,7 @@ function CityList(props) {
     name={city.name}
     img={city.img_link}
     safety_rating={city.safety_rating}
+    toggle={() => props.toggle()}
     />
   });
   return(

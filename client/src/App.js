@@ -1,5 +1,6 @@
 import './App.scss';
 import React, { useEffect, useState } from 'react';
+import CityInfo from './components/CityInfo';
 import Currencies from './components/Currencies';
 import CityList from './components/CityList';
 import Navbar from './components/Navbar';
@@ -19,11 +20,16 @@ function App() {
     })
   }, [])
 
+  let popup = false;
+
+
+
   return (
     <div className="App">
       <Navbar />
+      <CityInfo cities={cities} show={popup} />
       <Currencies />
-      <CityList cities={cities} />
+      <CityList cities={cities} toggle={() => {return popup = true}} />
     </div>
   );
 }

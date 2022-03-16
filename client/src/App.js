@@ -1,5 +1,6 @@
 import './App.scss';
 import React, { useEffect, useState } from 'react';
+import Currencies from './components/Currencies';
 import CityList from './components/CityList';
 import Navbar from './components/Navbar';
 import axios from 'axios';
@@ -21,6 +22,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
+      <Currencies />
       <CityList cities={cities} />
     </div>
   );

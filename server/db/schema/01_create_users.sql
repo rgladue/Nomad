@@ -25,7 +25,7 @@ safety_rating VARCHAR(255)
 
 CREATE TABLE user_inputs (
   id SERIAL PRIMARY KEY,
-  user_id VARCHAR(255) NOT NULL,
+  user_id INT NOT NULL,
   city_id INT,
   comment VARCHAR(255) NOT NULL,
   rating INT

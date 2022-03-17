@@ -10,7 +10,7 @@ function CityListItem(props) {
     <div className="city-item" onClick={() => props.trigger(true, props.name)}>
       <img className="picz" src={props.img} alt=""/>
       <p className="city-name">{props.name}</p>
-      <p className ='star-rating'>{props.safety_rating}/5</p>
+      <p className ='star-rating'>{props.safety_rating}/5 &#9733;</p>
      </div>
     
   )

@@ -22,15 +22,20 @@ function App() {
   }, [])
  
   const trigger = (data, name) => {
-    console.log(data, name)
+    if(!bool) {
     setBool(data)
     setCity(name)
+    }
+    if(bool) {
+      setBool(false)
+      setCity('')
+    }
   }
   return (
     <div className="App">
       <Navbar />
-      {bool && <CityInfo cities={cities} city={city}/>}
-      <Currencies />
+      {bool && <CityInfo cities={cities} city={city} trigger={trigger} />}
+      {/* <Currencies /> */}
       <CityList cities={cities} trigger={trigger}/>
     </div>
   );

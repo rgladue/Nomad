@@ -22,4 +22,8 @@ INSERT INTO user_inputs(user_id, city_id, comment, rating)
 VALUES(4, 4, 'I like Marrakech, The Sunsets were Beautiful.', 5),
 (4, 3, 'I also enjoyed Puerto Vallarta, The sunsets are just as beautiful as Marrakech.', 4.5),
 (3, 3, 'I love eating tacos man, they are the best. Even better when you eat them straight out of the street vendors here in Puerto.', 4.5),
-(1, 1, 'The museum was pretty nice, as was the Eiffel Tower. But the French were pretty rude once they realized I spoke English.', 2.5);
+(1, 1, 'The museum was pretty nice, as was the Eiffel Tower. But the French were pretty rude once they realized I spoke English.', 2.5),
+(6, 5, 'The lights everywhere at night makes you feel like you are in a dream. I was here for about four months, so I guess you can say I am an expert at speaking Japanese', 4),
+(2, 5, 'Japan, My most favourite city to settle and work in. You must come here and try the sushi!!', 5),
+(5, 8, 'If you have not been to Bangkok, you have not lived your life. Get here, fast!!', 4.9),
+(4, 5, 'I do not plan on returning to Japan.I only stayed for two months and I could not find a single pair of pants that fit me. I am a large man, with large expectations, and I cannot walk around without pants on!!', 2);

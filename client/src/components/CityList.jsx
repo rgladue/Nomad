@@ -3,7 +3,6 @@ import CityListItem from '../components/CityListItem';
 
 function CityList(props) {
   const cityArr = props.cities;
-  console.log('whats this', cityArr);
   const CityItem = cityArr.map((city) => {
   return <CityListItem
     key={city.id} 

@@ -16,7 +16,7 @@ VALUES ('Paris', '../img/Paris.jpeg', 'France', 'French', 2165423, 25, 'High', '
 ('Honolulu', '../img/Honolulu.jpeg', 'United States', 'English', 900000, 30, 'Low', 'Moderate', 3.6),
 ('Santorini', '../img/Santorini.jpg', 'Greece', 'Greek', 15000, 28, 'Low', 'Fast', 4.8),
 ('Bangkok', '../img/Bangkok.jpeg', 'Thailand', 'Thai', 10700000, 31, 'Low', 'Moderate', 4),
-('Medellin', '../img/Medellin.jpeg', 'Mexico', 'Spanish', 2569000, 28, 'Moderate', 'Fast', 3.5);
+('Medellin', '../img/Medellin.jpeg', 'Columbia', 'Spanish', 2569000, 28, 'Moderate', 'Fast', 3.5);
 
 INSERT INTO user_inputs(user_id, city_id, comment, rating)
 VALUES(4, 4, 'I like Marrakech, The Sunsets were Beautiful.', 5),

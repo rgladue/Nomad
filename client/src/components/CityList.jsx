@@ -10,9 +10,11 @@ function CityList(props) {
     name={city.name}
     img={city.img_link}
     safety_rating={city.safety_rating}
-    toggle={() => props.toggle()}
+    trigger={props.trigger}
     />
   });
+
+  
   return(
     <section className='city-list'>
     <h1 className="question">Where In The World Do You Want To Live Today?</h1> 

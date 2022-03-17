@@ -8,7 +8,8 @@ import axios from 'axios';
 
 function App() {
   const [cities, setCities] = useState([]);
-  
+  const [city, setCity] = useState('');
+  const [bool, setBool] = useState(false);
   useEffect(() => {
     axios.get('http://localhost:8080/cities')
     .then((response) => {
@@ -19,17 +20,18 @@ function App() {
       console.log('oh no!', error);
     })
   }, [])
-
-  let popup = false;
-
-
-
+ 
+  const trigger = (data, name) => {
+    console.log(data, name)
+    setBool(data)
+    setCity(name)
+  }
   return (
     <div className="App">
       <Navbar />
-      <CityInfo cities={cities} show={popup} />
+      {bool && <CityInfo cities={cities} city={city}/>}
       <Currencies />
-      <CityList cities={cities} toggle={() => {return popup = true}} />
+      <CityList cities={cities} trigger={trigger}/>
     </div>
   );
 }

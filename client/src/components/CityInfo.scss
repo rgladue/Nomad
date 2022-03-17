@@ -1,7 +1,5 @@
-$background: rgba(0, 0, 0, 0.5);
-
 .city-modal {
-  background-color: $background;
+  background-color: rgba(0, 0, 0, 0.5);
   width:100vw;
   height: 100%;
   z-index: 2000;
@@ -11,15 +9,47 @@ $background: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
-  display: none;
-}
 
-.show {
-  display: flex;
 }
 
 .info-window {
 width: 90%;
 height: 80%;
 background-color: white;
+border-radius: 10px;
+display: flex;
+flex-direction: column;
+}
+
+.info-pic {
+  width: 100%;
+  height: 50%;
+  filter:brightness(50%);
+  border-radius: 10px 10px 0 0;
+}
+
+.close {
+  width: 40px;
+  position: absolute;
+  align-self: flex-end;
+  margin: 10px;
+}
+
+.info-title {
+  color: white;
+  position: absolute;
+  align-self: center;
+}
+
+.info-score {
+  color: white;
+  position: absolute;
+  align-self: center;
+  margin-top: 100px;
+}
+
+.info-container {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50px;
 }

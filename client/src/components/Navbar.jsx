@@ -3,6 +3,7 @@ import './Navbar.scss';
 import Nomadic from '../img/nomadic.mp4';
 import Logo from '../img/earth.png';
 import { useState } from 'react';
+import axios from 'axios';
 
 function Navbar(props) {
   const [user, setUser] = useState('');

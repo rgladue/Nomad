@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './CityInfo.scss';
 import Close from '../img/close.png';
+import Form from './Form';
 import Comment from './Comment';
 import axios from 'axios';
 
@@ -35,6 +36,8 @@ function CityInfo(props) {
       rating={obj.rating}
       />
     })
+
+    const data = comments;
     
    
 
@@ -68,6 +71,8 @@ function CityInfo(props) {
           <h4>Comments</h4>
           
           <ul>{CommentItem}</ul>
+
+          <Form data={data}/>
         </div>
 
 

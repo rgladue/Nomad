@@ -17,13 +17,13 @@ axios.get(`http://api.exchangeratesapi.io/v1/latest?access_key=afedfbbed0fc12569
   return (
     <div className="ticker">
       
-       <p>EUR/USD: {prices.USD}</p>
-       <p>EUR/AUD: {prices.AUD}</p>
-       <p>EUR/GBP: {prices.GBP}</p>
-       <p>EUR/CAD: {prices.CAD}</p>
-      <p>EUR/JPY: {prices.JPY}</p>
-      <p>EUR/CHF: {prices.CHF}</p>
-      <p>EUR/MXN: {prices.MXN}</p>
+       <p>EUR/USD: <b className="dollar-price">${prices.USD}</b></p>
+       <p>EUR/AUD: <b className="dollar-price">${prices.AUD}</b></p>
+       <p>EUR/GBP: <b className="dollar-price">${prices.GBP}</b></p>
+       <p>EUR/CAD: <b className="dollar-price">${prices.CAD}</b></p>
+      <p>EUR/JPY: <b className="dollar-price">${prices.JPY}</b></p>
+      <p>EUR/CHF: <b className="dollar-price">${prices.CHF}</b></p>
+      <p>EUR/MXN: <b className="dollar-price">${prices.MXN}</b></p>
        
     </div>
   )

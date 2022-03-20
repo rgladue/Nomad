@@ -13,6 +13,8 @@ function CityList(props) {
     trigger={props.trigger}
     />
   });
+const link = "google.com"
+  
 
   
   return(
@@ -22,7 +24,7 @@ function CityList(props) {
     <div className="content-body">
       <ul>{CityItem}</ul>
       <div className="ad-section">
-        <img className="insurance" src={Nomad} />
+        <img className="insurance" src={Nomad} onClick={() => window.open("https://safetywing.com/nomad-insurance/")}/>
         <p className="ad-words"><b>Travel Insurance<br></br>for Nomads</b><br></br>Stay Protected<br></br>Adventurer!</p>
       </div>
     </div>

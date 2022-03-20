@@ -35,7 +35,7 @@ function App() {
     <div className="App">
       <Navbar />
       {bool && <CityInfo cities={cities} city={city} trigger={trigger} />}
-      {/* <Currencies /> */}
+      <Currencies />
       <CityList cities={cities} trigger={trigger}/>
     </div>
   );

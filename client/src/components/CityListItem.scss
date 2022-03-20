@@ -1,14 +1,13 @@
 $background: rgba(0, 0, 0, 0.5);
 
 .city-item {
-  width: 80%;
+  width: 90%;
   height: 255px;
   border-radius: 25px;
   margin: 10px;
   display: flex;
   flex-direction: row;
   align-items: space-between;
-  padding: 10px;
   cursor: pointer;
   transition: all .2s ease-in-out;
 }
@@ -20,23 +19,22 @@ $background: rgba(0, 0, 0, 0.5);
   font-weight: bold;
   font-size: 1.5em;
   background-color: $background;
-  margin-left: -14px;
   padding-right: 30px;
   padding-left: 10px;
   border-radius:0 25px 25px 0;
 }
 
 .star-rating {
+position: absolute;
 color: white;
-position: sticky;
 font-size: 1.2em;
 font-weight: bold;
 padding-left: 30px;
 padding-right: 30px;
 background-color: $background;
-border-radius:25px 25px 25px 25px;
-right:18.05%;
+border-radius:0 25px 25px 0;
 height: 30px;
+margin-top:200px;
 }
 
 .picz {
@@ -44,9 +42,8 @@ height: 30px;
   height: 100%;
   z-index: -2;
   object-fit: cover;
-  margin: -13px;
   border-radius: 25px;
-  filter:brightness(80%)
+  filter:brightness(90%)
 }
 
 .city-item:hover {

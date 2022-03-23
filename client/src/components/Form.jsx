@@ -5,11 +5,20 @@ import './Form.scss';
 function Form (props) {
   console.log("pepper", props.data);
   const [value, setValue] = useState('');
+  const [comment, setComment] = useState({});
   const submit = (input, obj) => {
+    
+    const newObj = {
+      id: props.user.id,
+      comment: input,
+      username: props.user.username,
+      city_id: props.data[0].city_id
+
+    };
    
-      axios.put('http://localhost:8080/userinputs', obj)
-      .then((data) => {
-        console.log(data);
+      axios.put('http://localhost:8080/userinputs', newObj)
+      .then((res) => {
+        setComment(res.data[0]);
       })
     
   }

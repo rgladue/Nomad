@@ -6,6 +6,7 @@ INSERT INTO users (id, username, email, password) VALUES (3, 'ZeldasMan', 'link@
 INSERT INTO users (id, username, email, password) VALUES (4, 'ThatGuySimon', 'simon_bel123@mail.ca', 'dracula');
 INSERT INTO users (id, username, email, password) VALUES (5, 'Johnson12', 'all_might@academia.jp', 'plusUltra');
 INSERT INTO users (id, username, email, password) VALUES (6, 'Mario64', 'mario@mushroomkindom.jp', 'plumber79');
+INSERT INTO users (id, username, email, password) VALUES (7, 'TugEye', 'tugs@weent.ca', 'weentugeye');
 
 INSERT INTO cities(name, img_link, country, language, population, avg_temp, cost_of_living, internet_speed, safety_rating) 
 VALUES ('Paris', '../img/Paris.jpeg', 'France', 'French', 2165423, 25, 'High', 'Fast', 3.8), 

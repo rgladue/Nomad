@@ -31,12 +31,23 @@ function App() {
       setCity('')
     }
   }
+  const [user, setUser] = useState('');
+  const userLogin = () => {
+    axios.get('http://localhost:8080/users')
+    .then((res) => {
+      setUser(res.data.slice(-1)[0]);
+    })
+  }
+
+  const userLogout = () => {
+    setUser('');
+  }
   return (
     <div className="App">
-      <Navbar />
-      {bool && <CityInfo cities={cities} city={city} trigger={trigger} />}
-      <Currencies />
-      <CityList cities={cities} trigger={trigger}/>
+      <Navbar login={userLogin} logout={userLogout} user={user}/>
+      {bool && <CityInfo cities={cities} city={city} trigger={trigger} user={user} />}
+      {/* <Currencies /> */}
+      <CityList cities={cities} trigger={trigger} />
     </div>
   );
 }

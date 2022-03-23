@@ -12,10 +12,12 @@ module.exports = (db) => {
 
   router.put('/', (req, res) => {
     console.log("heyheyhey", req.body)
-    // const command = "INSERT INTO user_inputs(user_id, city_id, comment, rating) VALUES(4, 2, 'hoka hey', 5)";
-    // db.query(command).then(data => {
-    //   res.json(data.rows);
-    // })
+    const inputs = req.body;
+    const rating = 4;
+    const command = `INSERT INTO user_inputs(user_id, city_id, comment, rating) VALUES($1, $2, $3, $4) RETURNING *`;
+    db.query(command, [inputs.id, inputs.city_id, inputs.comment, rating]).then(data => {
+      res.json(data.rows);
+    })
   })
 
   return router;

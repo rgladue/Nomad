@@ -23,11 +23,13 @@ function Form (props) {
     
   }
   return (
-    <div>
+    <div className="form-div">
       <form className="comment-form" onSubmit={(event) => {event.preventDefault()}}>
         <input 
+        className="input-box"
         value={value}
         onChange={(event) => setValue(event.target.value)}
+        placeholder="tell us about your experiences in this city.."
         />
       </form>
       <button className="comment-submit" onClick={() => submit(value, props.data)}>Post</button>

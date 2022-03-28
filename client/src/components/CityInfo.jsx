@@ -72,8 +72,8 @@ function CityInfo(props) {
           
           <ul>{CommentItem}</ul>
 
-          <Form data={data} user={props.user} />
         </div>
+          <Form data={data} user={props.user} />
 
 
 
